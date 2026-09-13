@@ -1,3 +1,3 @@
 
 console.log("Hello from JavaScript!");
-alert("Hi (awkwardly)?")
+// alert("Hi (awkwardly)?")
