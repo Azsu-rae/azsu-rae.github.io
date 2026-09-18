@@ -4,32 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <title>Ait-Ameur Ilyas</title>
+  <link rel="stylesheet" href="./style.css">
   <!-- <script src="./main.js" defer></script> -->
-  <!-- <link rel="stylesheet" href="./style.css"> -->
 </head>
 <body>
-  <section> <!-- SUMMARY -->
+  <section id="header" class="main-section text-section">
     <h1>Ait-Ameur Ilyas — Backend &amp Machine Learning Engineer</h1>
-    <span id="address">Douera, Algiers</span>
-    <span id="phone-number">+213 560 30 84 52</span>
-    <div id="socials">
-      <a href="https://www.linkedin.com/in/ilyas-ait-ameur/">
-        <img src="./logos/LI-In-Bug.png">
-      </a>
-      <a href="https://github.com/Azsu-rae">
-        <img src="./logos/github-default.png">
-      </a>
-      <a href="https://wa.me/213560308452">
-        <img src="./logos/whatsapp-thesvg-color.png">
-      </a>
+    <div id="personal-informations">
+      <div id="coordinates">
+        <span id="address">Douera, Algiers</span>
+        <span id="phone-number">+213 560 30 84 52</span>
+        <span id="email">aitameurilyas@gmail.com</span>
+        <span id="website"><a href="https://azsu-rae.github.io" target="_blank">azsu-rae.github.io</a></span>
+      </div>
+      <div id="socials">
+        <a href="https://github.com/Azsu-rae" target="_black">
+          <img src="./logos/github-default.png">
+        </a>
+        <a href="https://wa.me/213560308452" target="_black">
+          <img src="./logos/whatsapp-thesvg-color.png">
+        </a>
+        <a href="https://www.linkedin.com/in/ilyas-ait-ameur/" target="_black">
+          <img src="./logos/LI-In-Bug.png">
+        </a>
+      </div>
     </div>
+  </section>
+  <section id="summary" class="main-section text-section"> <!-- SUMMARY -->
+    <h1>Summary</h1>
     <p>Software engineer and Master’s student in Applied AI, with backend
       experience in Python/Django/FastAPI and systems-level work in Java.
       Building projects that combine backend architecture with applied ML;
       document processing pipelines, content moderation, model deployment.
       Comfortable across Unix environments and distributed systems.</p>
   </section>
-  <section> <!-- EDUCATION -->
+  <section class="main-section text-section"> <!-- EDUCATION -->
     <h1>Education</h1>
     <div class="education-entry">
       <strong class="institution-name">University of M'hamed Bougara</strong>
@@ -52,7 +61,7 @@
         </li>
       </ul>
   </section>
-  <section> <!-- EXPERIENCE -->
+  <section class="main-section text-section"> <!-- EXPERIENCE -->
     <h1>Experience</h1>
     <section>
       <div class="experience-entry">
@@ -84,30 +93,32 @@
       </ul>
     </section>
   </section>
-  <section> <!-- PROJECTS -->
+  <section class="main-section projects">
     <h1>Software Projects</h1>
-    <section>
-      <h2>Riwaq</h2>
-      <p>Knowledge base hub for Algerian university students</p>
-      <p><b>Stack: </b>Django · PostgreSQL</p>
-    </section>
-    <section>
-      <h2>WhatAmIWorth</h2>
-      <p>Judgemental grade average calculator open to contributions to eventually build a national database of university programs</p>
-      <p><b>Stack: </b>React · FastAPI</p>
-    </section>
-    <section>
-      <h2>TA</h2>
-      <p>A grading, attendance, and assiduity management tool for university professors</p>
-      <p><b>Stack: </b>JavaFX · YADL · SQLite</p>
-    </section>
-    <section>
-      <h2>YADL</h2>
-      <p>A lightweight SQLite ORM with a powerful reflection-based API that includes search capabilities and JSON serialization.</p>
-      <p><b>Stack: </b>Java · JDBC · SQLite</p>
-    </section>
+    <div id="project-cards">
+      <section class="project-card">
+        <h2>Riwaq</h2>
+        <p>Knowledge base hub for Algerian university students</p>
+        <p><b>Stack: </b>Django · PostgreSQL</p>
+      </section>
+      <section class="project-card">
+        <h2>WhatAmIWorth</h2>
+        <p>Judgemental grade average calculator open to contributions to eventually build a national database of university programs</p>
+        <p><b>Stack: </b>React · FastAPI</p>
+      </section>
+      <section class="project-card">
+        <h2>TA</h2>
+        <p>A grading, attendance, and assiduity management tool for university professors</p>
+        <p><b>Stack: </b>JavaFX · YADL · SQLite</p>
+      </section>
+      <section class="project-card">
+        <h2>YADL</h2>
+        <p>A lightweight SQLite ORM with a powerful reflection-based API that includes search capabilities and JSON serialization.</p>
+        <p><b>Stack: </b>Java · JDBC · SQLite</p>
+      </section>
+    </div>
   </section>
-  <section>
+  <section class="main-section text-section">
     <h1>Technical Skills</h1>
     <ul>
       <li><b>Languages: </b>Python · Java · JavaScript · C · Rust</li>
@@ -117,7 +128,7 @@
       <li><b>Document &amp Presentation Tooling: </b>LaTex · Typst · Marp (Markdown-based slideshows for code presentations)</li>
     </ul>
   </section>
-  <section>
+  <section class="main-section text-section">
     <h1>Notable Additions</h1>
     <ul>
       <li>Fluent in Arabic, French, and English</li>

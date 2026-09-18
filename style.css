@@ -3,83 +3,92 @@
  *
  * - clamp()
  * - drop-shadow()
+ * - translateY()
  *
  * */
 
 body {
-  padding: clamp(20px, 3vw, 60px) clamp(20px, 4vw, 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-section {
-  margin-bottom: 3rem !important;
+  display: flex;
+  flex-direction: column;
 }
 
-.main-section h1 {
-  margin: 0 auto;
-  margin-bottom: 2rem !important;
+.projects h1 {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-section {
+  width: 60vw;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: max-content;
+  justify-content: center;
+}
+
+#personal-informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#coordinates {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#coordinates > span + span::before {
+  content: "|";
+  margin: 0 5px;
 }
 
 #socials {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
 #socials img {
-  width: 56px;             /* pick the visual size you actually want */
-  height: 56px;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
-#socials img:hover {
-  filter: drop-shadow(1px 4px 0 black);
+.education-entry, .experience-entry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.text-section {
-  display: flex;
-  flex-direction: column;
-  max-width: 80vw;
-  margin: 0 auto;
-}
-
-.two-sided {
-  display: flex;
-  justify-content: space-between;
-}
-
-.side {
-  display: flex;
-  flex-direction: column;
-}
-
-.side * {
-  margin: 3px 0;
-}
-
-#experience {
-  gap: 10px;
-}
-
-#projects {
-  display: flex;
-  flex-direction: column;
+:is(.education-entry, .experience-entry) > :nth-child(even) {
+  justify-self: end;
 }
 
 #project-cards {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5vw;
+  gap: 2vw;
 }
 
 .project-card {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-evenly;
 
   border: 1px solid black;
   border-radius: 10px;
 
   /* fix the size */
-  flex: 0 0 280px;
   padding: 0 10px;
   width: 280px;
 }
@@ -91,11 +100,4 @@ body {
 
 .project-card h2 {
   text-align: center;
-}
-
-.project-card ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
