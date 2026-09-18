@@ -1,20 +1,138 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>asura.dev</title>
-        <script src="./main.js" defer></script>
-    </head>
-    <body>
-        <h1>Ait-Ameur Ilyas</h1>
-        <h2><i>Also known as 'Asura'</i></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        <h1>HTML Skills</h1>
-        <p>As initially learned through <a href="https://www.youtube.com/watch?v=FQdaUv95mR8">Kevin Stratvert's video</a>:</p>
-        <ul>
-          <li> I can <code>&lt;em&gt;</code><em>Emphasize</em><code>&lt;/em&gt;</code> text, which is different from <code>&lt;i&gt;</code><i>italic</i><code>&lt;/i&gt;</code>. A screen reader will treat the latter as normal text, while actually emphasizing the former </li>
-          <li> Similarly, <code>&lt;strong&gt;</code><strong>strong</strong><code>&lt;/strong&gt;</code> text carries additional weight, while <code>&lt;b&gt;</code><b>bold</b><code>&lt;/b&gt;</code> text only does the visual part </li>
-        </ul>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>asura.dev</title>
+  <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <section id="summary" class="main-section text-section"> <!-- HOME PAGE -->
+    <h1>Ait-Ameur Ilyas — Backend & Machine Learning Engineer</h1>
+    <p>Software engineer and Master’s student in Applied AI, with backend
+      experience in Python/Django/FastAPI and systems-level work in Java.
+      Building projects that combine backend architecture with applied ML;
+      document processing pipelines, content moderation, model deployment.
+      Comfortable across Unix environments and distributed systems.</p>
+  </section>
+  <section id="socials" class="main-section">
+    <a href="https://www.linkedin.com/in/ilyas-ait-ameur/">
+      <img src="./icons8-linkedin-96.png">
+    </a>
+    <a href="https://www.facebook.com/ilyas.ait.ameur.2025">
+      <img src="./icons8-facebook-96.png">
+    </a>
+    <a href="https://www.instagram.com/ilyaszero">
+      <img src="./icons8-instagram-96.png">
+    </a>
+  </section>
+  <section id="education" class="main-section text-section">
+    <h1>Education</h1>
+    <div class="two-sided">
+      <div class="side">
+        <p><b>University of M'hamed Bougara</b></p>
+        <p><i>Master's Degree in Applied Artificial Intelligence</i></p>
+      </div>
+      <div class="side">
+        <p>Boumerdes, Algeria</p>
+        <p><i>Sep 2022 — Jun 2027</i></p>
+      </div>
+    </div>
+    <div id="education-detail">
+      <ul>
+        <li>
+          <p>
+          <p><b>Licence:</b></p>
+          <ul>
+            <li><b>End-of-Cycle Project: </b>An educational study of the Q-learning algorithm (Reinforcement Learning)</li>
+            <li>Top 3 (class of 2025)</li>
+          </ul>
+          </p>
+        </li>
+        <li>
+          <p><b>Relevant Coursework: </b>Data Science, Machine Learning, Image Processing & Analysis , Deep Learning, Optimization & Metaheuristics, Stochastic Process, Microservice Architectures, High Performance Computing</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="experience" class="main-section text-section">
+    <h1>Experience</h1>
+    <section class="experience-section">
+      <div class="two-sided">
+        <div class="side">
+          <h2>Software Engineer Intern</h2>
+          <p>Huawei Software Solutions Sales Dept</p>
+        </div>
+        <div class="side">
+          <p>Sep 2025 — Nov 2025</p>
+          <p><i>Bab Ezzouar, Algiers</i></p>
+        </div>
+      </div>
+      <ul>
+        <li>Worked on Mobile Money, E-payment, and AI-powered CRM solutions</li>
+        <li>Made PPTs with insights into local market</li>
+        <li>Participated in B2B Sales processes and proofread documents</li>
+      </ul>
+    </section>
+    <section class="experience-section">
+      <div class="two-sided">
+        <div class="side">
+          <h2>TruthShield - Misinformation Fighting Non-profit</h2>
+          <p>DZ Young Leaders National Program</p>
+        </div>
+        <div class="side">
+          <p>May 2026 — June 2027</p>
+          <p><i>Boumerdes</i></p>
+        </div>
+      </div>
+      <ul>
+        <li>Working on developing misinformation fighting solutions</li>
+        <li>Led workshops in AI and introductory programming</li>
+      </ul>
+    </section>
+  </section>
+  <section id="projects" class="main-section"> <!-- PROJECTS -->
+    <h1>Software Projects</h1>
+    <div id="project-cards">
+      <section class="project-card">
+        <h2>Riwaq</h2>
+        <p>Knowledge base hub for Algerian university students</p>
+        <p>
+          <b>Stack:</b>
+          <span>Django · PostgreSQL</span>
+        </p>
+      </section>
+      <section class="project-card">
+        <h2>WhatAmIWorth</h2>
+        <p>Judgemental grade average calculator open to contributions to
+          eventually build a national database of university programs</p>
+        <p>
+          <b>Stack:</b>
+          <span>React · FastAPI</span>
+        </p>
+      </section>
+      <section class="project-card">
+        <h2>TA</h2>
+        <p>A grading, attendance, and assiduity management tool for university
+          professors</p>
+        <p>
+          <b>Stack:</b>
+          <span>JavaFX · YADL · SQLite</span>
+        </p>
+      </section>
+      <section class="project-card">
+        <h2>YADL</h2>
+        <p>A lightweight SQLite ORM with a powerful reflection-based API that includes search capabilities and JSON serialization.</p>
+        <p>
+          <b>Stack:</b>
+          <span>Java · JDBC · SQLite</span>
+        </p>
+      </section>
+    </div>
+  </section>
+</body>
+
 </html>

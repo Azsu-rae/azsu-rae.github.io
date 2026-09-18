@@ -1,0 +1,96 @@
+
+body {
+  padding: clamp(20px, 3vw, 60px) clamp(20px, 4vw, 80px);
+}
+
+.main-section {
+  margin-bottom: 3rem !important;
+}
+
+.main-section h1 {
+  margin: 0 auto;
+  margin-bottom: 2rem !important;
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+}
+
+#socials img {
+  width: 56px;             /* pick the visual size you actually want */
+  height: 56px;
+  display: block;          /* extra safety against inline gap */
+  /* border: 1px black solid; */
+}
+
+#socials img:hover {
+  filter: drop-shadow(1px 4px 0 black);
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.two-sided {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+}
+
+.side * {
+  margin: 3px 0;
+}
+
+#experience {
+  gap: 10px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+#project-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  /* fix the size */
+  flex: 0 0 280px;
+  padding: 0 10px;
+  width: 280px;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 1px 4px 0 black;
+}
+
+.project-card h2 {
+  text-align: center;
+}
+
+.project-card ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
