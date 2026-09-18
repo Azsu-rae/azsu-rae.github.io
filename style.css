@@ -1,4 +1,11 @@
 
+/* Functions:
+ *
+ * - clamp()
+ * - drop-shadow()
+ *
+ * */
+
 body {
   padding: clamp(20px, 3vw, 60px) clamp(20px, 4vw, 80px);
 }
@@ -20,8 +27,6 @@ body {
 #socials img {
   width: 56px;             /* pick the visual size you actually want */
   height: 56px;
-  display: block;          /* extra safety against inline gap */
-  /* border: 1px black solid; */
 }
 
 #socials img:hover {
