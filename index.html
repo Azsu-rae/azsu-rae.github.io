@@ -3,87 +3,77 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>asura.dev</title>
-  <script src="./main.js" defer></script>
-  <link rel="stylesheet" href="./style.css">
+  <title>Ait-Ameur Ilyas</title>
+  <!-- <script src="./main.js" defer></script> -->
+  <!-- <link rel="stylesheet" href="./style.css"> -->
 </head>
 <body>
-  <section id="summary" class="main-section text-section"> <!-- HOME PAGE -->
-    <h1>Ait-Ameur Ilyas — Backend & Machine Learning Engineer</h1>
+  <section> <!-- SUMMARY -->
+    <h1>Ait-Ameur Ilyas — Backend &amp Machine Learning Engineer</h1>
     <p>Software engineer and Master’s student in Applied AI, with backend
       experience in Python/Django/FastAPI and systems-level work in Java.
       Building projects that combine backend architecture with applied ML;
       document processing pipelines, content moderation, model deployment.
       Comfortable across Unix environments and distributed systems.</p>
   </section>
-  <section id="socials" class="main-section">
+  <section> <!-- SOCIALS -->
     <a href="https://www.linkedin.com/in/ilyas-ait-ameur/">
-      <img src="./icons8-linkedin-96.png">
+      <img src="./logos/LI-In-Bug.png">
     </a>
-    <a href="https://www.facebook.com/ilyas.ait.ameur.2025">
-      <img src="./icons8-facebook-96.png">
+    <a href="https://github.com/Azsu-rae">
+      <img src="./logos/github-default.png">
     </a>
-    <a href="https://www.instagram.com/ilyaszero">
-      <img src="./icons8-instagram-96.png">
+    <a href="https://wa.me/213560308452">
+      <img src="./logos/whatsapp-thesvg-color.png">
     </a>
   </section>
-  <section id="education" class="main-section text-section">
+  <section> <!-- EDUCATION -->
     <h1>Education</h1>
-    <div class="two-sided">
-      <div class="side">
-        <p><b>University of M'hamed Bougara</b></p>
-        <p><i>Master's Degree in Applied Artificial Intelligence</i></p>
-      </div>
-      <div class="side">
-        <p>Boumerdes, Algeria</p>
-        <p><i>Sep 2022 — Jun 2027</i></p>
-      </div>
+    <div class="education-entry">
+      <strong class="institution-name">University of M'hamed Bougara</strong>
+      <span class="location">Boumerdes, Algeria</span>
+      <span class="degree-title">Master's Degree in Applied Artificial Intelligence</span>
+      <span class="time-period">
+        <time datetime="2022-09">Sep 2022</time> — <time datetime="2027-06">Jun 2027</time>
+      </span>
     </div>
-    <div id="education-detail">
       <ul>
         <li>
-          <p>
-          <p><b>Licence:</b></p>
+          <b>Licence:</b>
           <ul>
             <li><b>End-of-Cycle Project: </b>An educational study of the Q-learning algorithm (Reinforcement Learning)</li>
             <li>Top 3 (class of 2025)</li>
           </ul>
-          </p>
         </li>
         <li>
-          <p><b>Relevant Coursework: </b>Data Science, Machine Learning, Image Processing & Analysis , Deep Learning, Optimization & Metaheuristics, Stochastic Process, Microservice Architectures, High Performance Computing</p>
+          <b>Relevant Coursework: </b>Data Science, Machine Learning, Image Processing &amp Analysis , Deep Learning, Optimization &amp Metaheuristics, Stochastic Process, Microservice Architectures, High Performance Computing.
         </li>
       </ul>
-    </div>
   </section>
-  <section id="experience" class="main-section text-section">
+  <section> <!-- EXPERIENCE -->
     <h1>Experience</h1>
-    <section class="experience-section">
-      <div class="two-sided">
-        <div class="side">
-          <h2>TruthShield - Misinformation Fighting Non-profit</h2>
-          <p>DZ Young Leaders National Program</p>
-        </div>
-        <div class="side">
-          <p>May 2026 — June 2027</p>
-          <p><i>Boumerdes</i></p>
-        </div>
+    <section>
+      <div class="experience-entry">
+        <strong class="institution-name">TruthShield - Misinformation Fighting Non-profit</strong>
+        <span class="location">Boumerdes</span>
+        <span class="title">Technical Co-Founder</span>
+        <span class="time-period">
+          <time datetime="2026-05">May 2026</time> — <time datetime="2027-06">June 2027</time>
+        </span>
       </div>
       <ul>
         <li>Working on developing misinformation fighting solutions</li>
         <li>Led introductory programming workshops</li>
       </ul>
     </section>
-    <section class="experience-section">
-      <div class="two-sided">
-        <div class="side">
-          <h2>Software Engineer Intern</h2>
-          <p>Huawei Software Solutions Sales Dept</p>
-        </div>
-        <div class="side">
-          <p>Sep 2025 — Nov 2025</p>
-          <p><i>Bab Ezzouar, Algiers</i></p>
-        </div>
+    <section>
+      <div class="experience-entry">
+        <strong class="institution-name">Huawei Software Solutions Sales Dept</strong>
+        <span class="location">Bab Ezzouar, Algiers</span>
+        <span class="title">Software Engineer Intern</span>
+        <span class="time-period">
+          <time datetime="2025-09">Sep 2025</time> — <time datetime="2025-11">Nov 2025</time>
+        </span>
       </div>
       <ul>
         <li>Worked on Mobile Money, E-payment, and AI-powered CRM solutions</li>
@@ -92,56 +82,40 @@
       </ul>
     </section>
   </section>
-  <section id="projects" class="main-section"> <!-- PROJECTS -->
+  <section> <!-- PROJECTS -->
     <h1>Software Projects</h1>
-    <div id="project-cards">
-      <section class="project-card">
-        <h2>Riwaq</h2>
-        <p>Knowledge base hub for Algerian university students</p>
-        <p>
-          <b>Stack:</b>
-          <span>Django · PostgreSQL</span>
-        </p>
-      </section>
-      <section class="project-card">
-        <h2>WhatAmIWorth</h2>
-        <p>Judgemental grade average calculator open to contributions to
-          eventually build a national database of university programs</p>
-        <p>
-          <b>Stack:</b>
-          <span>React · FastAPI</span>
-        </p>
-      </section>
-      <section class="project-card">
-        <h2>TA</h2>
-        <p>A grading, attendance, and assiduity management tool for university
-          professors</p>
-        <p>
-          <b>Stack:</b>
-          <span>JavaFX · YADL · SQLite</span>
-        </p>
-      </section>
-      <section class="project-card">
-        <h2>YADL</h2>
-        <p>A lightweight SQLite ORM with a powerful reflection-based API that includes search capabilities and JSON serialization.</p>
-        <p>
-          <b>Stack:</b>
-          <span>Java · JDBC · SQLite</span>
-        </p>
-      </section>
-    </div>
+    <section>
+      <h2>Riwaq</h2>
+      <p>Knowledge base hub for Algerian university students</p>
+      <p><b>Stack: </b>Django · PostgreSQL</p>
+    </section>
+    <section>
+      <h2>WhatAmIWorth</h2>
+      <p>Judgemental grade average calculator open to contributions to eventually build a national database of university programs</p>
+      <p><b>Stack: </b>React · FastAPI</p>
+    </section>
+    <section>
+      <h2>TA</h2>
+      <p>A grading, attendance, and assiduity management tool for university professors</p>
+      <p><b>Stack: </b>JavaFX · YADL · SQLite</p>
+    </section>
+    <section>
+      <h2>YADL</h2>
+      <p>A lightweight SQLite ORM with a powerful reflection-based API that includes search capabilities and JSON serialization.</p>
+      <p><b>Stack: </b>Java · JDBC · SQLite</p>
+    </section>
   </section>
-  <section class="main-section text-section">
+  <section>
     <h1>Technical Skills</h1>
     <ul>
-      <li><b>Languages: </b><span>Python · Java · JavaScript · C · Rust</span></li>
-      <li><b>Technologies: </b><span>FastAPI · Django · PostgreSQL · React · Docker · PyTorch · Pandas · NumPy · OpenCV</span></li>
-      <li><b>Linux: </b><span>Arch & Debian environments · Vim · Bash Scripting · ssh · Tmux</span></li>
-      <li><b>Developer Tooling: </b><span>(Neo)Vim · Git · Make · Bruno</span></li>
-      <li><b>Document & Presentation Tooling: </b><span>LaTex · Typst · Marp (Markdown-based slideshows for code presentations)</span></li>
+      <li><b>Languages: </b>Python · Java · JavaScript · C · Rust</li>
+      <li><b>Technologies: </b>FastAPI · Django · PostgreSQL · React · Docker · PyTorch · Pandas · NumPy · OpenCV</li>
+      <li><b>Linux: </b>Arch &amp Debian environments · Vim · Bash Scripting · ssh · Tmux</li>
+      <li><b>Developer Tooling: </b>(Neo)Vim · Git · Make · Bruno</li>
+      <li><b>Document &amp Presentation Tooling: </b>LaTex · Typst · Marp (Markdown-based slideshows for code presentations)</li>
     </ul>
   </section>
-  <section class="main-section text-section">
+  <section>
     <h1>Notable Additions</h1>
     <ul>
       <li>Fluent in Arabic, French, and English</li>
@@ -149,5 +123,4 @@
     </ul>
   </section>
 </body>
-
 </html>
