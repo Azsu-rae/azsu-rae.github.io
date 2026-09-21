@@ -72,6 +72,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 
   border: 1px solid black;
   border-radius: 10px;
@@ -89,6 +90,24 @@ a:visited {
 
 .project h2 {
   text-align: center;
+}
+
+.project a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.project a img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+}
+
+.project a:hover img {
+  opacity: 1;
 }
 
 
