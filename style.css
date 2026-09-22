@@ -1,18 +1,47 @@
 
+:root {
+  --bg: #FAFAF7;
+  --ink: #1B1D21;
+  --ink-soft: #5A5F66;
+  --accent: #2B5C8A;
+  --accent-tint: #E8EFF6;
+  --line: #DCD9D2;
+}
+
 body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+h1, h2 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+#header h1 {
+  color: var(--ink);
+}
+
 a, a:visited {
-  color: black;
+  color: var(--accent);
 }
 
 .main-section {
   display: flex;
   flex-direction: column;
   width: 60vw;
+}
+
+.main-section h1 {
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+  color: var(--ink);
 }
 
 #header {
@@ -59,6 +88,28 @@ a, a:visited {
   justify-self: end;
 }
 
+.institution-name {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.location {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.degree-title,
+.title {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.time-period {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
 #projects {
   display: flex;
   flex-direction: row;
@@ -73,8 +124,10 @@ a, a:visited {
   justify-content: space-between;
   position: relative;
 
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  background: #fff;
 
   /* fix the size */
   margin: 10px 0;
@@ -84,11 +137,27 @@ a, a:visited {
 
 .project:hover {
   transform: translateY(-3px);
-  box-shadow: 1px 4px 0 black;
+  box-shadow: 0 4px 14px rgba(43, 92, 138, 0.18);
 }
 
 .project h2 {
   text-align: center;
+  color: var(--ink);
+  font-size: 1.15rem;
+}
+
+.project p:first-of-type {
+  color: var(--ink-soft);
+}
+
+.project p:nth-of-type(2) {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  background: var(--accent-tint);
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
 }
 
 .project a {
@@ -115,15 +184,19 @@ a, a:visited {
     size: A4;
     margin: 10mm 12mm;
   }
- 
+
   * {
     box-shadow: none !important;
     transform: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
  
   body {
     font-size: 9pt;
-    line-height: 1.25;
+    line-height: 1.18;
+    background: #fff;
+    margin: 0; /* browsers add ~8px default body margin on top of your @page margin */
   }
 
   a, img {
@@ -135,7 +208,18 @@ a, a:visited {
     width: 100%;
     max-width: 100%;
   }
- 
+
+  .main-section h1 {
+    font-size: 11pt;
+    margin: 5pt 0 3pt;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--accent);
+  }
+
+  .main-section:last-child {
+    margin-bottom: 0;
+  }
+
   /* max-content sized the header to the title's unwrapped width, which is
      what overflowed the page — let it size to the page instead */
   #header {
@@ -150,13 +234,6 @@ a, a:visited {
     white-space: normal;
   }
  
-  .main-section h1 {
-    font-size: 11pt;
-    margin: 5pt 0 3pt;
-    margin-bottom: 12px;
-    border-bottom: 1px solid black;
-  }
-
   #projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -172,15 +249,25 @@ a, a:visited {
   li {
     margin-bottom: 1pt;
   }
+
+  ul ul {
+    margin: 1pt 0;
+  }
  
   #socials img {
     width: 20px;
     height: 20px;
   }
-  /**/
-  /* .project { */
-  /*   padding: 0px 5px; */
-  /* } */
+
+  .project {
+    border-left: 3px solid var(--accent);
+    margin: 4px 0;
+  }
+
+  .project p:nth-of-type(2) {
+    background: var(--accent-tint);
+    color: var(--accent);
+  }
 
   .project:hover {
     transform: none;
@@ -188,7 +275,7 @@ a, a:visited {
   }
  
   /* keep entries from splitting awkwardly across a page break */
-  section,
+  .main-section section,   /* only the per-job <section> nested inside EXPERIENCE */
   .education-entry,
   .experience-entry,
   .project {
@@ -196,7 +283,7 @@ a, a:visited {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .main-section {
     width: 90vw !important;
   }
