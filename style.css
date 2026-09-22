@@ -5,8 +5,7 @@ body {
   align-items: center;
 }
 
-a,
-a:visited {
+a, a:visited {
   color: black;
 }
 
@@ -126,6 +125,10 @@ a:visited {
     font-size: 9pt;
     line-height: 1.25;
   }
+
+  a, img {
+    opacity: 1 !important;
+  }
  
   /* 60vw only makes sense on a wide screen; on paper the page IS the width */
   .main-section {
@@ -190,5 +193,11 @@ a:visited {
   .experience-entry,
   .project {
     page-break-inside: avoid;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    width: 90vw;
   }
 }
